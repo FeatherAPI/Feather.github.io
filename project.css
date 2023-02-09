@@ -1,8 +1,10 @@
+/* Body color is black and scorlling up and down is disabled*/
 body {
     background-color: black;
     overflow-x: hidden;
 }
 
+/* body::before is used to set the background to an image and make it cover the whole screen*/
 body::before {
     content: "";
     position: absolute;
@@ -17,9 +19,56 @@ body::before {
   }
 
 .main-text {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 849;
     font-style: italic;
     text-align: center;
-    margin-top: 5px;
+    padding-top: 5px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    opacity: 1;
+    font-size: 45px;
+  }
+
+.Feather {
+    background: linear-gradient(to right, skyblue, #1b4f72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.sub-text {
+    color: white;
+}
+
+.text-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    max-width: 1000px;
+    max-height: 500px;
+    z-index: 1;
+    opacity: 1;
+  }  
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    background-color: none;
+    padding: 10px;
+    color: white;
+    font-family: "Mono", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  

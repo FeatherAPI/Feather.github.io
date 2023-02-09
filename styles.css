@@ -17,8 +17,9 @@ body::before {
   }
 
 .main-container {
-    font-family: "Mono", sans-serif;
-    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-weight: 849;
+    font-style: italic;
     text-align: center;
     font-size: 60px;
     padding-top: 50px;
